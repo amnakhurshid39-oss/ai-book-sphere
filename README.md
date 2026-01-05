@@ -1,4 +1,4 @@
-# AI Book Sphere – Intelligent Book Website (Project 1)
+# AI Book Sphere – Intelligent Book Website (Project Report)
 
 ## Group Members
 - Member 1: Amna Khurshid
