@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | AI Book Sphere</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- NAVBAR (shared) -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="../index.html">AI Book Sphere</a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="signup.html">Signup</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>About AI Book Sphere</h1>
+      <p class="lead">
+        AI Book Sphere is a simple digital bookstore website created for Project 1.
+        It helps users explore books and receive basic recommendations based on their preferences.
+      </p>
+
+      <div class="grid-2">
+        <div class="feature">
+          <h2>What We Offer</h2>
+          <ul class="bullets">
+            <li>Browse books by title, author, and genre</li>
+            <li>View a structured table catalog</li>
+            <li>Submit preferences through a form</li>
+          </ul>
+        </div>
+
+        <div class="feature">
+          <h2>Genres Available</h2>
+          <p>
+            Fiction, Fantasy, Mystery, Self-Help, and Non-Fiction (sample set). You can expand the list anytime.
+          </p>
+        </div>
+      </div>
+
+      <section class="card inner-card">
+        <h2>How Recommendations Work (Simple)</h2>
+        <p>
+          On the Signup page, when a user selects a genre, JavaScript displays a short list of suggested books.
+          This is a beginner-friendly approach that simulates “intelligent” recommendations without a database.
+        </p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> AI Book Sphere</p>
+      <p class="small">About Page</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
