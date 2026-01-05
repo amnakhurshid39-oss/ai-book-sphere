@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#374151"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" rx="28" fill="url(#g)"/>
+  <rect x="60" y="80" width="260" height="340" rx="18" fill="#ffffff" opacity="0.95"/>
+  <rect x="340" y="110" width="230" height="310" rx="18" fill="#e5e7eb" opacity="0.95"/>
+  <rect x="590" y="140" width="250" height="280" rx="18" fill="#ffffff" opacity="0.95"/>
+  <text x="80" y="110" fill="#111827" font-family="Arial" font-size="22" font-weight="700">AI Book Sphere</text>
+  <text x="80" y="140" fill="#374151" font-family="Arial" font-size="16">
+    Intelligent Book Discovery &amp; Simple Recommendations
+  </text>
+  <text x="80" y="210" fill="#111827" font-family="Arial" font-size="14">• Browse by genre and author</text>
+  <text x="80" y="240" fill="#111827" font-family="Arial" font-size="14">• Table catalog of books</text>
+  <text x="80" y="270" fill="#111827" font-family="Arial" font-size="14">• Preference-based suggestions</text>
+</svg>
