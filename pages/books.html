@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books Catalog | AI Book Sphere</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- NAVBAR (shared) -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="../index.html">AI Book Sphere</a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="books.html" class="active">Books</a></li>
+        <li><a href="signup.html">Signup</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Books Catalog</h1>
+      <p class="lead">
+        Below is a sample catalog table. You can add more books and adjust the categories.
+      </p>
+
+      <!-- Required: Properly structured HTML table -->
+      <div class="table-wrap">
+        <table class="book-table">
+          <thead>
+            <tr>
+              <th>Book Title</th>
+              <th>Author</th>
+              <th>Genre</th>
+              <th>Rating</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Alchemist</td>
+              <td>Paulo Coelho</td>
+              <td>Fiction</td>
+              <td>4.6</td>
+              <td>$12</td>
+            </tr>
+            <tr>
+              <td>Atomic Habits</td>
+              <td>James Clear</td>
+              <td>Self-Help</td>
+              <td>4.8</td>
+              <td>$15</td>
+            </tr>
+            <tr>
+              <td>1984</td>
+              <td>George Orwell</td>
+              <td>Dystopian</td>
+              <td>4.7</td>
+              <td>$10</td>
+            </tr>
+            <tr>
+              <td>The Hobbit</td>
+              <td>J.R.R. Tolkien</td>
+              <td>Fantasy</td>
+              <td>4.8</td>
+              <td>$14</td>
+            </tr>
+            <tr>
+              <td>Gone Girl</td>
+              <td>Gillian Flynn</td>
+              <td>Mystery</td>
+              <td>4.4</td>
+              <td>$13</td>
+            </tr>
+            <tr>
+              <td>Sapiens</td>
+              <td>Yuval Noah Harari</td>
+              <td>Non-Fiction</td>
+              <td>4.7</td>
+              <td>$18</td>
+            </tr>
+            <tr>
+              <td>Deep Work</td>
+              <td>Cal Newport</td>
+              <td>Productivity</td>
+              <td>4.5</td>
+              <td>$16</td>
+            </tr>
+            <tr>
+              <td>The Silent Patient</td>
+              <td>Alex Michaelides</td>
+              <td>Thriller</td>
+              <td>4.3</td>
+              <td>$12</td>
+            </tr>
+            <tr>
+              <td>Educated</td>
+              <td>Tara Westover</td>
+              <td>Memoir</td>
+              <td>4.6</td>
+              <td>$17</td>
+            </tr>
+            <tr>
+              <td>Rich Dad Poor Dad</td>
+              <td>Robert Kiyosaki</td>
+              <td>Finance</td>
+              <td>4.4</td>
+              <td>$11</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note">
+        Tip: Keep the theme consistent—same navbar, same styling, same footer across pages.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> AI Book Sphere</p>
+      <p class="small">Books Page</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
