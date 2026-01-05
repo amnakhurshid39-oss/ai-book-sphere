@@ -17,7 +17,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* ====== Header / Navbar ====== */
 .site-header {
   background: #111827;
-  colour: red;
+  colour: #f2f2;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .navbar {
