@@ -24,5 +24,4 @@ AI Book Sphere is an interactive digital bookstore website designed to help user
 - JavaScript (basic)
 
 ## Live Website
-- GitHub Pages URL: **(Add link after deployment)**  
-  Example: https://YOUR_GITHUB_USERNAME.github.io/ai-book-sphere/
+- GitHub Pages URL: https://amnakhurshid39-oss.github.io/ai-book-sphere/index.html
