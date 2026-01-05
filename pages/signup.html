@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup | AI Book Sphere</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- NAVBAR (shared) -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="../index.html">AI Book Sphere</a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="signup.html" class="active">Signup</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Join AI Book Sphere</h1>
+      <p class="lead">
+        Fill the form below to get simple book suggestions based on your preferred genre.
+        (No backend is used—this is a front-end form only.)
+      </p>
+
+      <!-- Required: Name, Email, Dropdown/Radio, Submit -->
+      <form id="signupForm" class="form">
+        <div class="form-row">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="genre">Preferred Genre (Dropdown)</label>
+          <select id="genre" name="genre" required>
+            <option value="" disabled selected>Select a genre</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Self-Help">Self-Help</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+          </select>
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Reading Frequency (Radio)</legend>
+          <label><input type="radio" name="frequency" value="Daily" required /> Daily</label>
+          <label><input type="radio" name="frequency" value="Weekly" /> Weekly</label>
+          <label><input type="radio" name="frequency" value="Monthly" /> Monthly</label>
+        </fieldset>
+
+        <!-- Optional extra field -->
+        <div class="form-row">
+          <label>
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            Subscribe to newsletter (optional)
+          </label>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+        <p class="note">After selecting a genre, see recommendations below.</p>
+      </form>
+
+      <!-- Recommendation output -->
+      <section class="card inner-card">
+        <h2>Your Recommendations</h2>
+        <div id="recommendations" class="recommendations">
+          <p class="muted">Select a genre to see suggestions.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> AI Book Sphere</p>
+      <p class="small">Signup Page</p>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
