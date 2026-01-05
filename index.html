@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Book Sphere</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- NAVBAR (shared) -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">AI Book Sphere</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/books.html">Books</a></li>
+        <li><a href="pages/signup.html">Signup</a></li>
+        <li><a href="pages/about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>AI Book Sphere</h1>
+        <p class="lead">
+          AI Book Sphere is an interactive digital bookstore designed to help users discover books by genre and author.
+          It also provides simple recommendations based on reading preferences.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn" href="pages/books.html">Browse Books</a>
+          <a class="btn btn-secondary" href="pages/signup.html">Get Recommendations</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <!-- Required: at least one image stored in images/ -->
+        <img src="images/banner.svg" alt="AI Book Sphere banner" />
+      </div>
+    </section>
+
+    <!-- GROUP MEMBERS (Required) -->
+    <section class="card">
+      <h2>Group Members</h2>
+      <ul class="members">
+        <li><strong>Member 1:</strong> Your Name – Roll No – Section</li>
+        <li><strong>Member 2:</strong> Your Name – Roll No – Section</li>
+        <li><strong>Member 3:</strong> Your Name – Roll No – Section</li>
+      </ul>
+      <p class="note">Update these names exactly as per your group.</p>
+    </section>
+
+    <!-- INTRO (Required) -->
+    <section class="card">
+      <h2>What You Can Do Here</h2>
+      <div class="grid-3">
+        <div class="feature">
+          <h3>Discover by Genre</h3>
+          <p>Explore books across Fiction, Mystery, Self-Help, and more.</p>
+        </div>
+        <div class="feature">
+          <h3>Browse by Author</h3>
+          <p>Find books from popular authors quickly using the Books table.</p>
+        </div>
+        <div class="feature">
+          <h3>Simple Recommendations</h3>
+          <p>Choose your genre preference and get instant suggestions on the Signup page.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> AI Book Sphere</p>
+      <p class="small">Project 1 – HTML, CSS, JavaScript</p>
+    </div>
+  </footer>
+
+  <script>
+    // Small helper so footer year is always correct
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
