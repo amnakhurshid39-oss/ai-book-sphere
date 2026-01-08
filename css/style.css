@@ -67,7 +67,7 @@ img { max-width: 100%; height: auto; display: block; }
   margin-top: 12px;
 }
 
-/* ====== Cards / Sections ====== */
+
 .card {
   background: #ffffff;
   border: 1px solid #e7eaf2;
@@ -114,6 +114,9 @@ img { max-width: 100%; height: auto; display: block; }
 table th:nth-child(3) {
     color: #1e88e5;        
     font-weight: 600;
+  .genre {
+    color: blue;
+}
 
 }
 .book-table th, .book-table td {
